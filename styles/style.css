@@ -21,6 +21,7 @@ video {
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -44,8 +45,8 @@ ol {
 }
 
 .content {
+  width: 1140px;
   display: flex;
-  padding: 133px 30px;
   gap: 30px;
 }
 
@@ -66,7 +67,8 @@ ol {
 .result__video-container {
   position: relative;
   inline-size: 711px;
-  margin-bottom: 16px;
+  margin-block-end: 16px;
+  height: 386px;
 }
 
 .search-form {
@@ -87,7 +89,6 @@ ol {
   font-size: 18px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
-  word-wrap: break-word;
 }
 
 .search-form__label {
@@ -97,7 +98,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover  {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -205,19 +206,12 @@ ol {
   height: 300px;
 }
 
-.content__list-item {
-margin: 2px 2px;
-}
-
-.li:last-child {
-  margin: 0;
-}
 
 .content__details {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 399px;
+  inline-size: 399px;
   gap: 21px;
   
 }
@@ -229,16 +223,10 @@ margin: 2px 2px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 70.50px;
-  word-wrap: break-word;
 }
 
 .content__accent {
   color: #545050;
-}
-
-.cards-list-item-template {
-  display: flex;
-  flex-direction: column;
 }
 
 .content__card-link {
